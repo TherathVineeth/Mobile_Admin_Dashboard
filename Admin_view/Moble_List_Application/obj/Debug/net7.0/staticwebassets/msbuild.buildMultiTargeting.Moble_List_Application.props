@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Moble_List_Application.props" />
+</Project>

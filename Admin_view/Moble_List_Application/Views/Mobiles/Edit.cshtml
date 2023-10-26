@@ -1,0 +1,36 @@
+﻿@model Mobile_List
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-black align-content-center">Edit Mobile</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <form  method="post" enctype="multipart/form-data">
+                <input type="hidden" asp-for="id" /> <!-- Hidden input for the id -->
+                <div class="mb-3">
+                    <label asp-for="Mobile_name" class="form-label"></label>
+                    <input asp-for="Mobile_name" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Mobile_Brand" class="form-label"></label>
+                    <input asp-for="Mobile_Brand" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Mobile_description" class="form-label"></label>
+                    <input asp-for="Mobile_description" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Mobile_logo" class="form-label"></label>
+                    <input type="file" asp-for="Mobile_logo" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <a asp-controller="Mobiles" asp-action="Index" class="btn btn-danger">Back</a>
+                    <button type="submit" class="btn btn-warning">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
